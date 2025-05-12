@@ -45,7 +45,7 @@
     text-wrap: balance;
   }
 
-  /* STYLING */
+  /* MAIN GRID LAYOUT*/
 
   body {
     display: grid;
@@ -57,7 +57,22 @@
     background-color: rgb(130, 179, 223);
   }
 
-  .main-content {
+  .main-wrapper {
     grid-column: 2;
     background-color: rgb(223, 225, 226);
   }
+
+  /* HEADER & MAIN CONTENT */
+
+ .main-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+ }
+
+ .header-section {
+    grid-row: 1;
+ }
+
+ .main-content {
+    grid-row: 2;
+ }

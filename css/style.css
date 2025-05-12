@@ -76,3 +76,21 @@
  .main-content {
     grid-row: 2;
  }
+
+ /* SIDEBAR */
+
+ .sidebar-menu {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding-top: 1rem;
+    align-content: start;
+ }
+
+ .sidebar-menu > * {
+    padding-left: 2rem;
+ }
+
+ .sidebar-menu ul {
+    list-style: none;
+ }

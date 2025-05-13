@@ -62,7 +62,7 @@
     background-color: rgb(223, 225, 226);
   }
 
-  /* HEADER & MAIN CONTENT */
+  /* MAIN GRID */
 
  .main-wrapper {
     display: grid;
@@ -94,3 +94,47 @@
  .sidebar-menu ul {
     list-style: none;
  }
+
+ /* HEADER */
+
+  .header-section {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    gap: 2rem;
+    padding: 1rem 3rem;
+    background-color: rgb(136, 95, 95);
+ }
+
+ .header-top, 
+ .header-bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+ }
+
+ .header-top > .search-section {
+    justify-self: center;
+ }
+
+ .header-top > .user-icons,
+ .header-bottom > .nav-buttons {
+    justify-self: end;
+ }
+
+ .header-bottom {
+    align-items: end;
+ }
+
+ .search-section > input[type="search"] {
+    appearance: none;
+    width: 30rem;
+    height: 1.7rem;
+    border-radius: 0.5rem;
+    border-width: 0px; 
+ }
+
+
+
+
+
+
+

@@ -132,6 +132,56 @@
     border-width: 0px; 
  }
 
+ /* MAIN CONTENT SECTION */
+
+    /* LEFT SECTION */
+
+ .main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+ }
+
+ .main-cards {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 9rem);
+    gap: 1rem;
+    grid-template: 
+    "projects projects"
+    "super-cool-project less-cool-project"
+    "impossible-app easy-app"
+    "ad-blocker money-maker";
+ }
+
+ .main-cards > h3 {
+    grid-area: projects;
+ }
+ .card1{
+    grid-area: super-cool-project;
+ }
+ .card2{
+    grid-area: less-cool-project;
+ }
+ .card3{
+    grid-area: impossible-app;
+ }
+ .card4{
+    grid-area: easy-app;
+ }
+ .card5{
+    grid-area: ad-blocker;
+ }
+ .card6{
+    grid-area: money-maker;
+ }
+
+    /* RIGHT SECTION */
+
+
+
 
 
 

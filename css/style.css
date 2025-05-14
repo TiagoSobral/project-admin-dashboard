@@ -150,6 +150,21 @@
     font-size: 1.2rem;
  }
 
+ .nav-buttons{
+    display: flex;
+    gap: 1rem;
+ }
+
+ .nav-buttons button {
+    font-size: 0.7rem;
+    border-radius: 0.9rem;
+    border-style: none;
+    width: 12ch;
+    height: 4ch;
+ }
+
+ 
+
  /* MAIN CONTENT SECTION */
 
     /* LEFT SECTION */
@@ -157,22 +172,24 @@
  .main-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 1rem;
     font-weight: bold;
  }
 
  .project-grouped-cards {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(3, 10rem);
-    gap: 1rem;
+    gap: 2rem;
  }
 
  .project-grouped-cards div {
     padding: 2rem;
     font-size: 0.9rem;
+    border: solid 1px gray;
+    border-radius: 0.5rem;
  }
 
 
@@ -200,6 +217,13 @@
     padding: 1rem;
     font-size: 0.7rem;
     font-weight: normal;
+}
+
+.announcements,
+.trending {
+    margin-top: 0.5rem;
+    border: solid 1px gray;
+    border-radius: 0.5rem;
 }
 
 

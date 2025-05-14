@@ -118,6 +118,7 @@
  .header-bottom {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    font-weight: bold;
  }
 
  .header-top > .search-section {
@@ -141,6 +142,14 @@
     border-width: 0px; 
  }
 
+ .introduction > p {
+    font-size: 0.7rem;
+ }
+
+ .introduction {
+    font-size: 1.2rem;
+ }
+
  /* MAIN CONTENT SECTION */
 
     /* LEFT SECTION */
@@ -150,6 +159,7 @@
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
     padding: 1rem;
+    font-weight: bold;
  }
 
  .project-grouped-cards {
@@ -162,6 +172,7 @@
 
  .project-grouped-cards div {
     padding: 2rem;
+    font-size: 0.9rem;
  }
 
 
@@ -179,6 +190,7 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
     padding: 1rem;
+    font-size: 0.7rem;
 }
 
 .trending {
@@ -186,6 +198,8 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 1rem;
     padding: 1rem;
+    font-size: 0.7rem;
+    font-weight: normal;
 }
 
 

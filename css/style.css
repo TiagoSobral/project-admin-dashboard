@@ -19,6 +19,7 @@
     /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
   }
   
   /* 6. Improve media defaults */
@@ -79,6 +80,11 @@
 
  /* SIDEBAR */
 
+ h1{
+    font-weight: 900;
+    font-size: 1.3rem;
+ }
+
  .sidebar-menu {
     display: grid;
     grid-template-rows: auto;
@@ -93,6 +99,9 @@
 
  .sidebar-menu ul {
     list-style: none;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 2.4rem;
  }
 
  /* HEADER */

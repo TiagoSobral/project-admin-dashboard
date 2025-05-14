@@ -143,61 +143,39 @@
     padding: 1rem;
  }
 
- .main-cards {
+ .project-grouped-cards {
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 9rem);
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 10rem);
     gap: 1rem;
-    grid-template: 
-    "projects projects"
-    "super-cool-project less-cool-project"
-    "impossible-app easy-app"
-    "ad-blocker money-maker";
  }
 
- .main-cards > h3 {
-    grid-area: projects;
+ .project-grouped-cards div {
+    padding: 2rem;
  }
- .card1{
-    grid-area: super-cool-project;
- }
- .card2{
-    grid-area: less-cool-project;
- }
- .card3{
-    grid-area: impossible-app;
- }
- .card4{
-    grid-area: easy-app;
- }
- .card5{
-    grid-area: ad-blocker;
- }
- .card6{
-    grid-area: money-maker;
- }
+
 
     /* RIGHT SECTION */
 
 .aside-cards {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-rows: repeat(2, 16rem);
+    gap: 1rem;
 }
 
 
 .announcements {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1rem;
     padding: 1rem;
 }
 
 .trending {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1rem;
     padding: 1rem;
 }
 

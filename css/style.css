@@ -176,7 +176,7 @@
 
  .main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 0.8fr;
     gap: 1.5rem;
     padding: 1rem;
     font-weight: bold;
@@ -186,7 +186,7 @@
     margin-top: 0.5rem;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(3, 10rem);
+    grid-template-rows: repeat(3, 12rem);
     gap: 2rem;
  }
 
@@ -203,13 +203,14 @@
 
 .aside-cards {
     display: grid;
-    grid-template-rows: repeat(2, 16rem);
+    grid-template-rows: repeat(2, 20rem);
     gap: 2rem;
 }
 
 
 .announcements {
     display: grid;
+    height: 90%;
     grid-template-rows: repeat(3, 1fr);
     padding: 1.5rem;
     font-size: 0.7rem;
@@ -218,6 +219,7 @@
 .trending {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+    height: 90%;
     gap: 1rem;
     padding: 1.5rem;
     font-size: 0.7rem;
@@ -235,7 +237,6 @@
 .announcements >div:nth-child(2) {
     border-top: solid 1px gray;
     border-bottom: solid 1px gray;
-    border-spacing: 1rem;
 }
 
 .announcements > div,

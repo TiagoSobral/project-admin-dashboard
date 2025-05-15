@@ -55,12 +55,13 @@
 
   .sidebar-menu {
     grid-column: 1;
-    background-color: rgb(130, 179, 223);
+    background-color: rgb(48, 154, 230);
+    color: white;
   }
 
   .main-wrapper {
     grid-column: 2;
-    background-color: rgb(223, 225, 226);
+    background-color: rgba(191, 204, 219, 0.583);
   }
 
   /* MAIN GRID */
@@ -109,9 +110,9 @@
   .header-section {
     display: grid;
     grid-template-rows: 2fr 3fr;
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 1rem 3rem;
-    background-color: rgb(136, 95, 95);
+    background-color: rgb(244, 244, 244);
  }
 
  .header-top, 
@@ -140,6 +141,7 @@
     height: 1.7rem;
     border-radius: 0.5rem;
     border-width: 0px; 
+    background-color: rgba(191, 204, 219, 0.509);
  }
 
  .introduction > p {
@@ -161,7 +163,10 @@
     border-style: none;
     width: 12ch;
     height: 4ch;
+    background-color: rgba(48, 154, 230, 0.77);
+    color: white;
  }
+
 
  
 
@@ -190,6 +195,7 @@
     font-size: 0.9rem;
     border: solid 1px gray;
     border-radius: 0.5rem;
+    background-color: rgb(244, 244, 244);
  }
 
 
@@ -198,15 +204,14 @@
 .aside-cards {
     display: grid;
     grid-template-rows: repeat(2, 16rem);
-    gap: 1rem;
+    gap: 2rem;
 }
 
 
 .announcements {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 0.7rem;
 }
 
@@ -214,7 +219,7 @@
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 0.7rem;
     font-weight: normal;
 }
@@ -224,6 +229,18 @@
     margin-top: 0.5rem;
     border: solid 1px gray;
     border-radius: 0.5rem;
+    background-color: rgb(244, 244, 244);
+}
+
+.announcements >div:nth-child(2) {
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+    border-spacing: 1rem;
+}
+
+.announcements > div,
+.trending > div {
+    padding: 0.7rem;
 }
 
 

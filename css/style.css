@@ -113,6 +113,7 @@
     gap: 1.5rem;
     padding: 1rem 3rem;
     background-color: rgb(244, 244, 244);
+    box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.147);
  }
 
  .header-top, 
@@ -177,6 +178,13 @@
 
  /* MAIN CONTENT SECTION */
 
+ /* boxes shadow */
+.project-grouped-cards div,
+.announcements,
+.trending {
+ box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.147);
+}
+
     /* LEFT SECTION */
 
  .main-content {
@@ -198,7 +206,7 @@
  .project-grouped-cards div {
     padding: 2rem;
     font-size: 0.9rem;
-    border: solid 1px gray;
+    border-left: 0.5rem solid rgb(237, 193, 46);
     border-radius: 0.5rem;
     background-color: rgb(244, 244, 244);
  }
@@ -235,7 +243,6 @@
 .announcements,
 .trending {
     margin-top: 0.5rem;
-    border: solid 1px gray;
     border-radius: 0.5rem;
     background-color: rgb(244, 244, 244);
 }
@@ -253,6 +260,7 @@
 .trending > div {
     padding: 0.7rem;
 }
+
 
 
 /* SVG'S */

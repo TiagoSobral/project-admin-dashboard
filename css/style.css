@@ -50,7 +50,7 @@
 
   body {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: minmax(12rem, 1fr) 5fr;
   }
 
   .sidebar-menu {
@@ -95,7 +95,7 @@
  }
 
  .sidebar-menu > * {
-    padding-left: 2rem;
+    padding-left: 4rem;
  }
 
  .sidebar-menu ul {
@@ -120,6 +120,10 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     font-weight: bold;
+ }
+
+ .header-top {
+    gap: 2rem;
  }
 
  .header-top > .search-section {
@@ -234,7 +238,11 @@
     background-color: rgb(244, 244, 244);
 }
 
-.announcements >div:nth-child(2) {
+.announcements {
+    align-content: center;
+}
+
+.announcements > div:nth-child(2) {
     border-top: solid 1px gray;
     border-bottom: solid 1px gray;
 }
@@ -243,6 +251,75 @@
 .trending > div {
     padding: 0.7rem;
 }
+
+
+/* SVG'S */
+
+    /* SIDEBAR */
+
+    .sidebar-menu h1,
+    .main-opt li, 
+    .preference-opt li {
+        position: relative;
+    }
+
+    .sidebar-menu h1::before,
+    .main-opt li::before, 
+    .preference-opt li::before{
+        position: absolute;
+        width: 1.2rem;
+        height: 1.2rem;
+        left: -2rem;
+        top: 0.1rem;
+        filter: invert();
+    }
+
+    .sidebar-menu > h1::before {
+        content: url("../svg/view-dashboard.svg");
+        left: 2rem;
+        top: -0.1rem;
+        scale: 2;
+    }
+
+    .main-opt li:nth-child(1)::before{
+        content: url("../svg/home.svg");
+    }
+
+    .main-opt li:nth-child(2)::before{
+        content: url("../svg/card-account-details-outline.svg");
+    }
+
+    .main-opt li:nth-child(3)::before{
+        content: url("../svg/message.svg");
+    }
+
+    .main-opt li:nth-child(4)::before{
+        content: url("../svg/clock-time-three.svg");
+    }
+
+    .main-opt li:nth-child(5)::before{
+        content: url("../svg/note-multiple.svg");
+    }
+
+    .main-opt li:nth-child(6)::before{
+        content: url("../svg/account-group.svg");
+    }
+    
+    .preference-opt li:nth-child(1)::before{
+        content: url("../svg/cog.svg");
+    }
+
+    .preference-opt li:nth-child(2)::before{
+        content: url("../svg/help-box.svg");
+    }
+
+    .preference-opt li:nth-child(3)::before{
+        content: url("../svg/shield-check.svg");
+    }
+    
+    
+
+
 
 
 

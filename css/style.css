@@ -209,6 +209,12 @@
     border-left: 0.5rem solid rgb(237, 193, 46);
     border-radius: 0.5rem;
     background-color: rgb(244, 244, 244);
+    overflow-x: scroll;
+ }
+
+ .project-grouped-cards div p{
+    font-size: 0.7rem;
+    color: rgb(144, 144, 144);
  }
 
 

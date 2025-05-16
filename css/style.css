@@ -120,6 +120,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     font-weight: bold;
+    align-items: center;
  }
 
  .header-top {
@@ -135,13 +136,13 @@
     justify-self: end;
  }
 
- .header-bottom {
-    align-items: end;
+ .header-bottom .introduction {
+    padding-left: 7rem;
  }
 
  .search-section > input[type="search"] {
     appearance: none;
-    width: 30rem;
+    width: 35rem;
     height: 1.7rem;
     border-radius: 0.5rem;
     border-width: 0px; 
@@ -316,6 +317,59 @@
     .preference-opt li:nth-child(3)::before{
         content: url("../svg/shield-check.svg");
     }
+
+    /* HEADER */
+
+    .search-section label {
+        position: relative;
+    }
+
+    .search-section label::before {
+        position: absolute;
+        content: url("../svg/magnify.svg");
+        width: 1.5rem;
+        height: 1.5rem;
+        left: -2rem;
+        bottom: -0.1rem;
+    }
+
+/* IMAGES */
+
+ .introduction span,
+ .user-icons {
+    position: relative;
+ }
+
+ .introduction span::before,
+ .user-icons::before {
+    position: absolute;
+    content: " ";
+    background: url(../images/IMG_7554.JPG);
+    background-size: contain;
+    border-radius: 3rem;
+ }
+
+ .user-icons::before {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: -0.5rem;
+    left: -4rem;
+ }
+
+ .user-icons::after {
+    position: absolute;
+    content: url(../svg/bell-ring-outline.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+    left: -7.5rem;
+ }
+
+ .introduction span::before {
+    width: 4rem;
+    height: 4rem;
+    top: -2.2rem;
+    left: -5.5rem;
+ }
     
     
 

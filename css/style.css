@@ -191,12 +191,12 @@
     display: grid;
     grid-template-columns: 2fr 0.8fr;
     gap: 1.5rem;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     font-weight: bold;
  }
 
  .project-grouped-cards {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(3, 12rem);
@@ -204,7 +204,7 @@
  }
 
  .project-grouped-cards div {
-    padding: 2rem;
+    padding: 1.5rem;
     font-size: 0.9rem;
     border-left: 0.5rem solid rgb(237, 193, 46);
     border-radius: 0.5rem;
@@ -248,7 +248,7 @@
 
 .announcements,
 .trending {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     border-radius: 0.5rem;
     background-color: rgb(244, 244, 244);
 }

@@ -365,6 +365,42 @@ h3 {
         bottom: -0.1rem;
     }
 
+    /* MAIN CARDS */
+
+    .project-grouped-cards div {
+        position: relative;
+    }
+
+    .project-grouped-cards div::after,
+    .project-grouped-cards div::before {
+        position: absolute;
+        width: 1.2rem;
+        height: 1.2rem;
+        bottom: 1rem;
+    }
+
+    .project-grouped-cards div::after {
+        content: url(../svg/share-variant-outline.svg);
+        rotate: -90deg;
+        right: 2rem;
+    }
+
+    .project-grouped-cards div::before {
+        content: url(../svg/star-plus-outline.svg);
+        right: 4rem;
+    }
+
+    .project-grouped-cards div p::after {
+        position: absolute;
+        content: url(../svg/eye-plus-outline.svg);
+        width: 1.2rem;
+        height: 1.2rem;
+        bottom: 1rem;
+        right: 6rem;
+    }
+
+
+
 /* IMAGES */
 
     /* HEADER */

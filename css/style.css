@@ -113,7 +113,7 @@
     gap: 1.5rem;
     padding: 1rem 3rem;
     background-color: rgb(244, 244, 244);
-    box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.147);
+ box-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.164);
  }
 
  .header-top, 
@@ -182,7 +182,7 @@
 .project-grouped-cards div,
 .announcements,
 .trending {
- box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.147);
+ box-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.164);
 }
 
     /* LEFT SECTION */
@@ -199,7 +199,7 @@
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(3, 12rem);
+    grid-template-rows: repeat(3, 13.5rem);
     gap: 2rem;
  }
 
@@ -224,8 +224,8 @@
 
 .aside-cards {
     display: grid;
-    grid-template-rows: repeat(2, 20rem);
-    gap: 2rem;
+    grid-template-rows: repeat(2, 22rem);
+    gap: 2.6rem;
 }
 
 
@@ -253,9 +253,7 @@
     margin-top: 1rem;
     border-radius: 0.5rem;
     background-color: rgb(244, 244, 244);
-}
-
-.announcements {
+    overflow-y: scroll;
     align-content: center;
 }
 
@@ -274,6 +272,16 @@
     font-size: 0.7rem;
     color: rgb(144, 144, 144);
     padding-top: 0.2rem;
+}
+
+.trending div{
+    margin-left: 1rem;
+}
+
+/* OTHER */
+
+h3 {
+    letter-spacing: 0.05rem;
 }
 
 

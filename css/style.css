@@ -181,7 +181,7 @@
  /* MAIN CONTENT SECTION */
 
  /* boxes shadow */
-.project-grouped-cards div,
+.project-grouped-cards > div,
 .announcements,
 .trending {
  box-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.164);
@@ -205,7 +205,7 @@
     gap: 2rem;
  }
 
- .project-grouped-cards div {
+ .project-grouped-cards > div {
     padding: 1.5rem;
     font-size: 0.9rem;
     letter-spacing: 0.05ch;
@@ -215,7 +215,7 @@
     overflow-x: scroll;
  }
 
- .project-grouped-cards div p{
+ .project-grouped-cards > div > p{
     padding-top: 0.2rem;
     font-size: 0.8rem;
     font-weight: 300;
@@ -223,6 +223,19 @@
     line-height: 1.5rem;
     letter-spacing: 0;
 
+ }
+
+ .project-grouped-cards > div {
+    display: grid;
+    grid-template-rows: 1.5rem 8rem 1.5rem;
+ }
+
+ .card-svgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    gap: 1rem;
  }
 
 
@@ -376,7 +389,7 @@ h3 {
 
     /* MAIN CARDS */
 
-    .project-grouped-cards > div {
+    /* .project-grouped-cards > div {
         position: relative;
     }
 
@@ -406,7 +419,7 @@ h3 {
         height: 1.2rem;
         bottom: 1rem;
         right: 6rem;
-    }
+    } */
 
 
 

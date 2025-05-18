@@ -19,7 +19,7 @@
     /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
-    font-family: "Montserrat", sans-serif;
+    font-family: "montserrat", sans-serif;
   }
   
   /* 6. Improve media defaults */
@@ -50,7 +50,7 @@
 
   body {
     display: grid;
-    grid-template-columns: minmax(12rem, 1fr) 5fr;
+    grid-template-columns: minmax(12rem, 1fr) minmax(calc(12rem*5.9),5fr);
   }
 
   .sidebar-menu {
@@ -82,7 +82,7 @@
  /* SIDEBAR */
 
  h1{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.3rem;
  }
 
@@ -100,7 +100,7 @@
 
  .sidebar-menu ul {
     list-style: none;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1rem;
     line-height: 2.4rem;
  }
@@ -113,7 +113,7 @@
     gap: 1.5rem;
     padding: 1rem 3rem;
     background-color: rgb(244, 244, 244);
- box-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.164);
+    box-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.164);
  }
 
  .header-top, 
@@ -165,10 +165,12 @@
 
  .nav-buttons button {
     font-size: 0.7rem;
-    border-radius: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.1ch;
+    border-radius: 1.5rem;
     border-style: none;
     width: 12ch;
-    height: 4ch;
+    height: 5ch;
     background-color: rgba(48, 154, 230, 0.77);
     color: white;
  }
@@ -206,6 +208,7 @@
  .project-grouped-cards div {
     padding: 1.5rem;
     font-size: 0.9rem;
+    letter-spacing: 0.05ch;
     border-left: 0.5rem solid rgb(237, 193, 46);
     border-radius: 0.5rem;
     background-color: rgb(244, 244, 244);
@@ -215,9 +218,13 @@
  .project-grouped-cards div p{
     padding-top: 0.2rem;
     font-size: 0.8rem;
+    font-weight: 300;
     color: rgb(144, 144, 144);
-    line-height: 1.3rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+
  }
+
 
 
     /* RIGHT SECTION */
@@ -234,7 +241,6 @@
     height: 90%;
     grid-template-rows: repeat(3, 1fr);
     padding: 1.5rem;
-    font-size: 0.8rem;
 }
 
 .trending {
@@ -243,8 +249,6 @@
     height: 90%;
     gap: 0.2rem;
     padding: 1rem;
-    font-size: 0.8rem;
-    font-weight: normal;
     justify-content: center;
 }
 
@@ -255,6 +259,7 @@
     background-color: rgb(244, 244, 244);
     overflow-y: scroll;
     align-content: center;
+    font-size: 0.8rem;
 }
 
 .announcements > div:nth-child(2) {
@@ -265,13 +270,17 @@
 .announcements > div,
 .trending > div {
     padding: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05ch;
 }
 
 .announcements p,
 .trending p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: rgb(144, 144, 144);
     padding-top: 0.2rem;
+    font-weight: 300;
+    letter-spacing: 0;
 }
 
 .trending div{
@@ -367,30 +376,30 @@ h3 {
 
     /* MAIN CARDS */
 
-    .project-grouped-cards div {
+    .project-grouped-cards > div {
         position: relative;
     }
 
-    .project-grouped-cards div::after,
-    .project-grouped-cards div::before {
+    .project-grouped-cards > div::after,
+    .project-grouped-cards > div::before {
         position: absolute;
         width: 1.2rem;
         height: 1.2rem;
         bottom: 1rem;
     }
 
-    .project-grouped-cards div::after {
+    .project-grouped-cards > div::after {
         content: url(../svg/share-variant-outline.svg);
         rotate: -90deg;
         right: 2rem;
     }
 
-    .project-grouped-cards div::before {
+    .project-grouped-cards > div::before {
         content: url(../svg/star-plus-outline.svg);
         right: 4rem;
     }
 
-    .project-grouped-cards div p::after {
+    .project-grouped-cards > div > p::after {
         position: absolute;
         content: url(../svg/eye-plus-outline.svg);
         width: 1.2rem;
